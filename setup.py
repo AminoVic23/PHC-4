@@ -1,0 +1,42 @@
+"""
+Setup script for Primary Healthcare HIS
+"""
+from setuptools import setup, find_packages
+
+setup(
+    name="primary-healthcare-his",
+    version="1.0.0",
+    description="Primary Healthcare Hospital Information System",
+    author="Your Name",
+    author_email="your.email@example.com",
+    packages=find_packages(),
+    include_package_data=True,
+    install_requires=[
+        "Flask==2.3.3",
+        "Flask-SQLAlchemy==3.0.5",
+        "Flask-Migrate==4.0.5",
+        "Flask-Login==0.6.3",
+        "Flask-JWT-Extended==4.5.3",
+        "Flask-WTF==1.1.1",
+        "Flask-Mail==0.9.1",
+        "Flask-Caching==2.1.0",
+        "celery==5.3.4",
+        "redis==5.0.1",
+        "psycopg2-binary==2.9.7",
+        "alembic==1.12.0",
+        "marshmallow==3.20.1",
+        "marshmallow-sqlalchemy==0.29.0",
+        "bcrypt==4.0.1",
+        "python-dotenv==1.0.0",
+        "gunicorn==21.2.0",
+        "pytest==7.4.2",
+        "factory-boy==3.3.0",
+        "Pillow==10.0.1",
+        "reportlab==4.0.4",
+        "openpyxl==3.1.2",
+        "python-dateutil==2.8.2",
+        "WTForms==3.0.1",
+        "email-validator==2.0.0",
+    ],
+    python_requires=">=3.11",
+)
